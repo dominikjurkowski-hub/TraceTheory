@@ -1,0 +1,19 @@
+digraph G {
+    rankdir=LR;
+    node [shape=circle];
+
+    b_1 [label="b"];
+    a_2 [label="a"];
+    a_3 [label="a"];
+    d_4 [label="d"];
+    c_5 [label="c"];
+    b_6 [label="b"];
+
+    b_1 -> d_4;
+    a_3 -> c_5;
+    a_3 -> b_6;
+    b_1 -> a_2;
+    d_4 -> c_5;
+    d_4 -> b_6;
+    a_2 -> a_3;
+}

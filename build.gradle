@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
+
+tasks.named('run') {
+    dependsOn 'classes'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
